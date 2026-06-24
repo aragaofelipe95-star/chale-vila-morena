@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vila Morena — 3 versões do site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Cormorant+Garamond:wght@500;600&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Hanken Grotesk', system-ui, sans-serif; background: #eceae2; color: #2a2c22; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; color: inherit; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 56px 28px 72px; }
+    .head { display: flex; align-items: center; gap: 16px; margin-bottom: 6px; }
+    .head img { width: 64px; height: 64px; border-radius: 50%; }
+    .eyebrow { font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: #4e7d2a; font-weight: 700; }
+    h1 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: 2.2rem; color: #1d3026; margin-top: 4px; }
+    .lead { color: #6f7363; font-size: 1.05rem; max-width: 680px; margin: 16px 0 40px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .card { background: #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 4px 18px -6px rgba(0,0,0,.18); display: block; transition: transform .2s, box-shadow .2s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 16px 34px -14px rgba(0,0,0,.28); }
+    .thumb { height: 210px; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #fff; overflow: hidden; }
+    .thumb::before { content: ""; position: absolute; inset: 0; background-size: cover; background-position: center 42%; }
+    .thumb.t1::before { background-image: linear-gradient(180deg, rgba(20,32,18,.4), rgba(20,32,18,.78)), url('img/hero.jpg'); }
+    .thumb.t2::before { background-image: linear-gradient(180deg, rgba(8,14,8,.5), rgba(8,14,8,.85)), url('img/hero.jpg'); }
+    .thumb.t3::before { background-image: linear-gradient(180deg, rgba(20,32,18,.32), rgba(20,32,18,.7)), url('img/hero.jpg'); }
+    .thumb .label { position: relative; }
+    .thumb .eb { font-size: 10px; letter-spacing: .26em; text-transform: uppercase; font-weight: 700; opacity: .92; margin-bottom: 8px; }
+    .t1 .ttl { font-family: 'DM Serif Display', serif; font-size: 1.7rem; }
+    .t2 .ttl { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 1.9rem; }
+    .t2 .eb { color: #dcbb74; }
+    .t3 .ttl { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 1.7rem; letter-spacing: -.02em; }
+    .body { padding: 22px 22px 24px; }
+    .vnum { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #4e7d2a; }
+    .vname { font-size: 1.35rem; color: #1d3026; margin: 4px 0 8px; font-weight: 700; }
+    .t1 .vname { font-family: 'DM Serif Display', serif; font-weight: 400; }
+    .t2 .vname { font-family: 'Cormorant Garamond', serif; font-weight: 600; }
+    .t3 .vname { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; }
+    .vdesc { font-size: .95rem; color: #6f7363; line-height: 1.55; margin-bottom: 16px; }
+    .open { display: inline-flex; align-items: center; gap: 7px; color: #fff; font-size: 14px; font-weight: 700; padding: 10px 18px; border-radius: 999px; }
+    .o1 { background: #c4923a; } .o2 { background: #1f3317; } .o3 { background: #4e7d2a; }
+    .note { margin-top: 36px; color: #8a8d80; font-size: .9rem; text-align: center; }
+    @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <img src="img/358096725_722826066179509_1874315737607339502_n.jpg" alt="Vila Morena" />
+      <div>
+        <div class="eyebrow">Vila Morena · Pacoti / CE</div>
+        <h1>3 versões do site</h1>
+      </div>
+    </div>
+    <p class="lead">Três estilos da mesma página — todos com as fotos reais da pousada, a galeria com lightbox, depoimento, mapa e reserva pelo WhatsApp. Clique em uma para abrir a versão completa.</p>
+
+    <div class="grid">
+      <a class="card" href="v1-aconchego.html">
+        <div class="thumb t1">
+          <div class="label"><div class="eb" style="color:#e9c89a">Pacoti · CE</div><div class="ttl">Refúgio na serra</div></div>
+        </div>
+        <div class="body">
+          <div class="vnum">Versão 01</div>
+          <div class="vname">Aconchego na Serra</div>
+          <div class="vdesc">Creme e verde, serifa quente. Clássica e acolhedora.</div>
+          <span class="open o1">Abrir versão →</span>
+        </div>
+      </a>
+
+      <a class="card" href="v2-refugio.html">
+        <div class="thumb t2">
+          <div class="label"><div class="eb">Pacoti · CE</div><div class="ttl">Refúgio na serra</div></div>
+        </div>
+        <div class="body">
+          <div class="vnum">Versão 02</div>
+          <div class="vname">Refúgio na Mata</div>
+          <div class="vdesc">Escura e elegante, serifa fina e dourado. Sofisticada.</div>
+          <span class="open o2">Abrir versão →</span>
+        </div>
+      </a>
+
+      <a class="card" href="v3-leve.html">
+        <div class="thumb t3">
+          <div class="label"><div class="eb" style="color:#cfe0a8">Pacoti · CE</div><div class="ttl">Refúgio na serra</div></div>
+        </div>
+        <div class="body">
+          <div class="vnum">Versão 03</div>
+          <div class="vname">Leve &amp; Natural</div>
+          <div class="vdesc">Clara e moderna, tipografia atual e cantos arredondados.</div>
+          <span class="open o3">Abrir versão →</span>
+        </div>
+      </a>
+    </div>
+
+    <p class="note">Vila Morena · Chalé na serra de Pacoti · Ceará · (85) 98896-0155</p>
+  </div>
+</body>
+</html>
